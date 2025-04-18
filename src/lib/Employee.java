@@ -12,13 +12,13 @@ public class Employee {
     private String lastName;
     private String idNumber;
     private String address;
-    private boolean gender;
+    private Gender gender;
 	private Period period;
     private Salary salary;
     private Spouse spouse;
     private List<Child> child = new ArrayList<>();
 	
-	public Employee(String employeeId, String firstName, String lastName, String idNumber, String address, boolean gender) {
+	public Employee(String employeeId, String firstName, String lastName, String idNumber, String address, Gender gender) {
 		this.employeeId = employeeId;
 		this.firstName = firstName;
 		this.lastName = lastName;
