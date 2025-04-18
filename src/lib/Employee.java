@@ -27,10 +27,25 @@ public class Employee {
 		this.gender = gender;
 	}
 	
-	public void addChild(String childName, String childIdNumber) {
-		childNames.add(childName);
-		childIdNumbers.add(childIdNumber);
-	}
+    public void addChild(String childName, String childIdNumber) {
+        child.add(new Child(childName, childIdNumber));
+    }
+
+    public Period getPeriod() {
+        return period;
+    }
+
+    public Salary getSalary() {
+        return salary;
+    }
+
+    public Spouse getSpouse() {
+        return spouse;
+    }
+
+    public int getTotalChild() {
+        return child.size();
+    }
 	
 	public int getAnnualIncomeTax() {
 		
